@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"></meata>
+        <title>day2</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1><a href="./../../index.html" id="a">JavaScript</a></h1>
+        <input type="button" value="night" onclick="
+            var target = document.querySelector('body'); // 중복되는 부분을 변수로 선언한다
+            if(this.value==='night'){ // 자기 자신을 가리킬 경우 this를 쓸 수 있다.
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                document.querySelector('#a').style.color='white';
+                this.value='day';
+            }
+            else{
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                document.querySelector('#a').style.color='black';
+                this.value='night';
+            }
+        ">
+        <h2>타입</h2>
+    <p>7개의 원시타입
+        <ol>
+            <li>숫자(number)</li>
+            <li>문자열(string)</li>
+            <li>불리언(boolean)</li>
+            <li>심볼(symbol) : ECMAScript 6부터 제공</li>
+            <li>undefined</li>
+        </ol>
+        자바스크립의 경우 형변환이 매우 유연한다. 변수에 타입이 정해져 있지 않으며,<br>
+        같은 변수에 다른 타입의 값을 다시 대입할 수도 있다.<br>
+        <br>명시적 타입 변환
+        <ol>
+            <li>
+                Number()
+            </li>
+            <li>
+                String()
+            </li>
+            <li>
+                Boolean()
+            </li>
+            <li>
+                Object()
+            </li>
+            <li>
+                parsenInt()
+            </li>
+            <li>
+                parseFloat()
+            </li>
+        </ol>
+    </p>
+    </body>
+</html>
