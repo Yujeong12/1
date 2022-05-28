@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"></meata>
+        <title>day2</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1><a href="./../../index.html" id="a">JavaScript</a></h1>
+        <input type="button" value="night" onclick="
+            var target = document.querySelector('body'); // 중복되는 부분을 변수로 선언한다
+            if(this.value==='night'){ // 자기 자신을 가리킬 경우 this를 쓸 수 있다.
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                document.querySelector('#a').style.color='white';
+                this.value='day';
+            }
+            else{
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                document.querySelector('#a').style.color='black';
+                this.value='night';
+            }
+        ">
+        <h2>호이스팅</h2>
+        <p>아까 위의 변수 선언 부분의 예시 코드에서 보았다시피, 자바스크립트는 나중에 선언한 변수를 참조할 수 있다.(변수 호이스팅)<br>
+        함수에서는 함수 선언으로는 호이스팅이 되지만 함수 표현식으로는 호이스팅이 되지 않는다.
+    <ul>
+        <li>
+            함수 선언<br>
+            foo(); <span id="note"><-- "bar"</span><br><span id="func">function</span> foo() {<br>   console.log('bar');<br>}<br><br>
+            함수 표현식<br>
+            baz(); <span id="note"><-- TypeError : baz is not a function</span><br><span id="variable">var</span> baz = <span id="func">funtion()</span> {<br>   console.log('bar2');<br>};
+        </li>
+    </ul></p>
+    </body>
+</html>
