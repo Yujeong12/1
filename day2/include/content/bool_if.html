@@ -2,7 +2,7 @@
 <html lang="ko">
     <head>
         <meta charset="utf-8">
-        <title>day2</title>
+        <title>comparsion operator&boolean</title>
     </head>
     <body>
         <h1><a href="./../../index.html" id="a">JavaScript</a></h1>
@@ -21,35 +21,26 @@
                 this.value='night';
             }
         ">
-        <h2>Array</h2>
-        <h2>Syntax</h2>
+        <h2>Comparsion operators & Boolean</h2>
+        <h3>===</h3>
         <script>
-            var coworkers = ["egoing", "leezche"];
+            document.write("1==1의 결과 : ", 1===1);
+            document.write('<br>',"1===2의 결과 : ", 1===2);
         </script>
-        <h3>get</h3>
+        <h3>&lt;</h3>
         <script>
-            document.write(coworkers[0]);
-            document.write(coworkers[1]);
+            document.write("1<2의 결과 : ",1<2);
+            document.write('<br>',"1<1의 결과 : ", 1<1);
         </script>
-        <h3>add</h3>
+        <h3>if-true</h3>
         <script>
-            coworkers.push('duru');
-            coworkers.push('taeho');
+            if(true) document.write("true");
+            else document.write("false");
         </script>
-        <h3>count</h3>
+        <h3>if-false</h3>
         <script>
-            document.write(coworkers.length);
+            if(false) docuemnt.write("true");
+            else document.write("false");
         </script>
-        <hr>
-        <h2>Loop</h2>
-        <ul>
-            <script>
-                var i = 0;
-                while(i<=3){
-                    document.write('<li>'+coworkers[i]+'</li>');
-                    i+=1;
-                }
-            </script> 
-        </ul>
     </body>
 </html>

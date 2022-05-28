@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>day2-1</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function LinksSetColor (color){
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i<alist.length){
+                    alist[i].style.color=color;
+                    i+=1;
+                }
+            }
+            f
+            function nightDayHandler(salf){
+                var target = document.querySelector('body'); // 중복되는 부분을 변수로 선언한다
+            if(salf.value==='night'){ // 자기 자신을 가리킬 경우 this를 쓸 수 있다.
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                document.querySelector('#a').style.color='white';
+                salf.value='day';
+
+                LinksSetColor('powderblue');
+            }
+            else{
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                document.querySelector('#a').style.color='black';
+                salf.value='night';
+
+                LinksSetColor('blue');
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <h1><a hr5ef="index.html" id="a">JavaScript</a></h1>
+        <input type="button" value="night" onclick="
+            nightDayHandler(this);
+        ">
+        <hr><h2>자바 기초 문법</h2>
+        <ol>
+            <li><a href="include/content/day2-1.html" id="a">Variable</a></li>
+            <li><a href="include/content/day2-2.html" id="a">Scope</a></li>
+            <li><a href="include/content/day2-3.html" id="a">Hoisting</a></li>
+            <li><a href="include/content/day2-4.html" id="a">Type</a></li>
+        </ol>
+        <h2>실습</h2>
+        <ol>
+            <li><a href="include/content/bool_if.html" id="a">Bool, If</a></li>
+            <li><a href="include/content/array_loop.html" id="a">Array, Loop</a></li>
+            <li><a href="include/content/function.html" id="a">Function</a></li>
+        </ol>
+    </body>
+</html>

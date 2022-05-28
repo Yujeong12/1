@@ -1,0 +1,19 @@
+<!-- 원래는 공통 파일을 분리하고 싶어서 만든 파일이나, 헤더파일 처럼 따로 분리해서
+include 시키는 방법을 찾지 못함. 다음번엔 다시 도전. -->
+
+<h1><a href="./../index.html" id="a">JavaScript</a></h1>
+        <input type="button" value="night" onclick="
+            var target = document.querySelector('body'); // 중복되는 부분을 변수로 선언한다
+            if(this.value==='night'){ // 자기 자신을 가리킬 경우 this를 쓸 수 있다.
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                document.querySelector('#a').style.color='white';
+                this.value='day';
+            }
+            else{
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                document.querySelector('#a').style.color='black';
+                this.value='night';
+            }
+        ">
