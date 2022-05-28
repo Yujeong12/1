@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>day2</title>
-        <link rel="stylesheet" href="./../../style.css">
     </head>
     <body>
         <h1><a href="./../../index.html" id="a">JavaScript</a></h1>
@@ -22,16 +21,35 @@
                 this.value='night';
             }
         ">
-        <h2>호이스팅</h2>
-        <p>아까 위의 변수 선언 부분의 예시 코드에서 보았다시피, 자바스크립트는 나중에 선언한 변수를 참조할 수 있다.(변수 호이스팅)<br>
-        함수에서는 함수 선언으로는 호이스팅이 되지만 함수 표현식으로는 호이스팅이 되지 않는다.
-    <ul>
-        <li>
-            함수 선언<br>
-            foo(); <span id="note"><-- "bar"</span><br><span id="func">function</span> foo() {<br>   console.log('bar');<br>}<br><br>
-            함수 표현식<br>
-            baz(); <span id="note"><-- TypeError : baz is not a function</span><br><span id="variable">var</span> baz = <span id="func">funtion()</span> {<br>   console.log('bar2');<br>};
-        </li>
-    </ul></p>
+        <h2>Array</h2>
+        <h2>Syntax</h2>
+        <script>
+            var coworkers = ["egoing", "leezche"];
+        </script>
+        <h3>get</h3>
+        <script>
+            document.write(coworkers[0]);
+            document.write(coworkers[1]);
+        </script>
+        <h3>add</h3>
+        <script>
+            coworkers.push('duru');
+            coworkers.push('taeho');
+        </script>
+        <h3>count</h3>
+        <script>
+            document.write(coworkers.length);
+        </script>
+        <hr>
+        <h2>Loop</h2>
+        <ul>
+            <script>
+                var i = 0;
+                while(i<=3){
+                    document.write('<li>'+coworkers[i]+'</li>');
+                    i+=1;
+                }
+            </script> 
+        </ul>
     </body>
 </html>
